@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+ <img src="{{url_for('static',filename='imagens/Camaro SS.png')}}" width="700" height="450" class="rounded mx-auto d-block" alt="...">
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a  class="btn btn-outline-secondary">Comprar</a>
+    </div>
+
+  <div class="container text-center" style="margin-top: 20vh;">
+    <h1>Camaro SS R$: 400 mil</h1><br><br>
+    <div>Motor:
+
+        Tipo: V8
+        Capacidade: 6.162 cm³
+        Potência Máxima: 455 cavalos de potência (335 kW) a 6.000 rpm
+        Torque Máximo: 617 Nm a 4.400 rpm
+        Sistema de Injeção: Injeção direta de combustível<br><br>
+
+        Transmissão:
+
+        Transmissão: Automática de 10 velocidades com paddle-shift
+        Tração: Traseira<br><br>
+
+        Chassis e Suspensão:
+
+        Suspensão Dianteira: Independente, tipo MacPherson, com molas helicoidais e amortecedores a gás adaptativos
+        Suspensão Traseira: Independente, com multilink e molas helicoidais e amortecedores a gás adaptativos
+        Estabilidade: Controle de estabilidade eletrônico
+        Direção: Direção assistida elétrica<br><br>
+        Freios:
+
+        Freios Dianteiros: Discos ventilados de 370 mm com pinças de quatro pistões
+        Freios Traseiros: Discos ventilados de 339 mm com pinças de quatro pistões<br><br>
+        Rodas e Pneus:
+
+        Rodas: Rodas de liga leve de 20 polegadas, design específico Camaro
+        Pneus: Pneus de alta performance<br><br>
+        Dimensões:
+
+        Comprimento: 4.783 mm
+        Largura: 1.897 mm (sem espelhos retrovisores)
+        Altura: 1.343 mm
+        Entre Eixos: 2.812 mm
+        Peso: 1.720 kg (aproximadamente)<br><br>
+        Capacidades:
+
+        Capacidade do Porta-Malas: 257 litros
+        Capacidade do Tanque de Combustível: 72 litros<br><br>
+        Interior:
+
+        Capacidade: 4 passageiros
+        Bancos: Bancos esportivos em couro, aquecidos e ventilados
+        Volante: Volante esportivo multifuncional em couro com paddle-shift<br><br>
+        Tecnologia e Conectividade:
+
+        Sistema de Entretenimento: Sistema de áudio premium com tela sensível ao toque, Apple CarPlay, Android Auto
+        Conectividade: Bluetooth, Wi-Fi, USB<br><br>
+        Segurança:
+
+        Airbags: Airbags frontais, laterais e de cortina
+        Assistência ao Motorista: Alerta de colisão frontal, assistente de permanência na faixa, câmera de ré, monitoramento de ponto cego</div><br><br>
+      <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="/comprar" class="btn btn-outline-secondary">Voltar</a>
+      </div>
+  </div>
+{% endblock %}

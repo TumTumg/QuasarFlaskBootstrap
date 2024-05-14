@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+	<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+       <div class="form-container">
+			<p class="title">Cadastro</p>
+			<form class="form">
+				<div class="input-group">
+					<label for="username">Usuário</label>
+					<input type="text" name="username" id="username" placeholder="">
+				</div>
+				<div class="input-group">
+					<label for="password">Senha</label>
+					<input type="password" name="password" id="password" placeholder="">
+				</div>
+				<div class="input-group">
+					<label for="phone">Telefone</label>
+					<input type="tel" name="phone" id="phone" placeholder="">
+				</div>
+				<div class="input-group">
+					<label for="age">Idade</label>
+					<input type="number" name="age" id="age" placeholder="">
+				</div>
+				<div class="input-group">
+					<label for="cep">CEP</label>
+					<input type="text" name="cep" id="cep" placeholder="">
+				</div>
+				<button class="sign"><E>Registrar</E></button>
+			</form>
+			<p class="signup">Já tem uma conta?
+				<a rel="noopener noreferrer" href="/login" class="">Entrar</a>
+			</p>
+		</div>
+	</div>
+{% endblock %}
