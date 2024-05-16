@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 <img src="{{url_for('static',filename='imagens/Agera RS One.png')}}" width="700" height="450" class="rounded mx-auto d-block" alt="...">
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <a  class="btn btn-outline-secondary">Comprar</a>
-    </div>
+
 
   <div class="container text-center" style="margin-top: 20vh;">
     <h1>Koenigsegg Agera RS One R$: 12,5 milhões</h1><br><br>
@@ -59,6 +57,11 @@
 
         Airbags: Airbags frontais
         Assistência ao Motorista: Controle de tração, controle de estabilidade, sistema de monitoramento de pressão dos pneus</div><br><br>
+
+     <div class="d-grid gap-2 col-2 mx-auto">
+        <a  class="btn btn-outline-secondary">Comprar</a>
+     </div><br><br>
+
       <div class="d-grid gap-2 col-6 mx-auto">
           <a href="/comprar" class="btn btn-outline-secondary">Voltar</a>
       </div>
