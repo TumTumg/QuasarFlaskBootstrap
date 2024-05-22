@@ -3,32 +3,34 @@
 	<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
        <div class="form-container">
 			<p class="title">Cadastro</p>
-			<form class="form">
+			<form action="/cadastrarUsuario" method="POST" class="form">
 				<div class="input-group">
 					<label for="username">Usuário</label>
-					<input type="text" name="username" id="username" placeholder="">
+					<input type="text" name="usuario" id="username" placeholder="">
 				</div>
 				<div class="input-group">
 					<label for="password">Senha</label>
-					<input type="password" name="password" id="password" placeholder="">
+					<input type="password" name="senha" id="password" placeholder="">
 				</div>
 				<div class="input-group">
 					<label for="phone">Telefone</label>
-					<input type="tel" name="phone" id="phone" placeholder="">
+					<input type="tel" name="telefone" id="phone" placeholder="">
 				</div>
 				<div class="input-group">
 					<label for="age">Idade</label>
-					<input type="number" name="age" id="age" placeholder="">
+					<input type="number" name="idade" id="age" placeholder="">
 				</div>
 				<div class="input-group">
 					<label for="cep">CEP</label>
 					<input type="text" name="cep" id="cep" placeholder="">
-				</div>
+				</div><br><br>
 				<button class="sign"><E>Registrar</E></button>
 			</form>
 			<p class="signup">Já tem uma conta?
 				<a rel="noopener noreferrer" href="/login" class="">Entrar</a>
 			</p>
+		         <a href="/crud">CRUD</a><br><br>
+
 		</div>
 	</div>
 {% endblock %}
