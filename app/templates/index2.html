@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 
-    <img src="{{url_for('static',filename='imagens/rs6 2.png')}}"  class="rounded mx-auto d-block" alt="...">
-
-
+  <img src="{{url_for('static',filename='imagens/rs6 2.png')}}"  class="rounded mx-auto d-block" alt="...">
 
   <div class="container text-center" style="margin-top: 20vh;">
     <h1>Audi RS6 Avant R$: 1,175 milhão</h1><br><br>
@@ -69,7 +67,7 @@
         Assistência ao Motorista: Assistência de tráfego cruzado traseiro, assistência de pré-colisão, assistência de saída de faixa, sistema de monitoramento de ponto cego Audi side assist, assistência de estacionamento plus com câmera 360 graus</div><br><br>
 
         <div class="d-grid gap-2 col-2 mx-auto">
-           <a  class="btn btn-outline-secondary">Comprar</a>
+           <a href="/pagamento"  class="btn btn-outline-secondary">Comprar</a>
         </div><br><br>
 
 
@@ -77,4 +75,5 @@
           <a href="/comprar" class="btn btn-outline-secondary">Voltar</a>
       </div>
   </div>
+
 {% endblock %}

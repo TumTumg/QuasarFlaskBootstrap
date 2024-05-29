@@ -4,10 +4,18 @@
 	<div class="form-container">
 		<p class="title">ADM</p>
 		<form class="form">
-			   <a class="sign" href="/listar">Consultar Tudo</a><br><br>
-			   <a class="sign" href="/listarIndividual">Consultar Individual</a><br><br>
-			   <a class="sign" href="/atualizar">Atualizar</a><br><br>
-			   <a class="sign" href="/excluir">Excluir</a><br><br>
+			<div class="input-group">
+				<label for="username">Usuário</label>
+				<input type="text" name="username" id="username" placeholder="">
+			</div>
+			<div class="input-group">
+				<label for="password">Senha</label>
+				<input type="password" name="password" id="password" placeholder="">
+				<div class="forgot">
+					<a rel="noopener noreferrer" href="#">Esqueceu a Senha?</a>
+				</div>
+			</div>
+			 <a class="sign" href="/crud">Entrar
 			 </a>
 		</form>
 		<div class="social-message">
