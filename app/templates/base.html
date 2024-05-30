@@ -10,7 +10,7 @@
 </head>
 <body class="bg-dark text-light"><br>
   <nav class="navbar navbar-expand-lg navbar-dark bg-indigo-900">
-      <div class="container">
+      <div class="container-fluid">
         <img src="{{url_for('static',filename='imagens/quasarIcon3.jpg')}}" width="100" height="100">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -97,7 +97,7 @@
                         <div class="tooltip">Instagram</div>
                       </li>
                       <li class="icon-content">
-                        <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+                        <a href="https://youtu.be/ioklZYz_juM?si=LkS9nlAdwl3rFgeR" aria-label="Youtube" data-social="youtube">
                           <div class="filled"></div>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -117,11 +117,15 @@
                         <div class="tooltip">Youtube</div>
                       </li>
                     </ul></ul>
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Enviar</button>
-              </form>
-
+              <div class="input__container">
+                  <div class="shadow__input"></div>
+                      <button class="input__button__shadow">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+                          <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+                        </svg>
+                      </button>
+                  <input type="text" name="text" class="input__search" placeholder="O que vai ser hoje?">
+              </div>
 
 
 

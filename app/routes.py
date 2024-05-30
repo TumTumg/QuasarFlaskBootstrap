@@ -3,6 +3,11 @@ from flask import render_template, request
 import json
 import requests
 from flask import session
+from flask import redirect, url_for
+import secrets
+
+app.secret_key = secrets.token_hex(16)  # Isso irá gerar uma chave secreta hexadecimal de 16 bytes
+
 
 link = "https://flaskti18nzmbotti-default-rtdb.firebaseio.com/" # Conecta o banco
 
@@ -66,7 +71,7 @@ def loginAdm():
             # Verifica se o usuário e senha correspondem ao ADM
             if usuario == USUARIO_ADM and senha == SENHA_ADM:
                 session['logged_in'] = True  # Define a sessão como logada
-                return 'Login bem-sucedido! Você agora tem acesso ao CRUD.'
+                return redirect(url_for('crud'))  # Redireciona para a página CRUD
             else:
                 return 'Usuário ou senha incorretos.'
 
@@ -74,7 +79,6 @@ def loginAdm():
             return f'Ocorreu um erro\n\n + {e}'
 
     return render_template('loginAdm.html', titulo="Login ADM", nome="Daniel")
-
 
 @app.route('/cadastro')
 def cadastro():
@@ -120,13 +124,14 @@ def index9():
 def index10():
     return render_template('index10.html', titulo="Audi RS6 Avant", nome="Daniel")
 
-@app.route('/crud')
-def crud():
-    return render_template('crud.html', titulo="CRUD", nome="Daniel")
 
 @app.route('/pagamento')
 def pagamento():
     return render_template('pagamento.html', titulo="Pagamento", nome="Daniel")
+
+@app.route('/crud')
+def crud():
+    return render_template('crud.html', titulo="CRUD", nome="Daniel")
 
 
 @app.route('/listar')
